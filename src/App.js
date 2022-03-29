@@ -1,6 +1,7 @@
 import Navbar from "./Components/Navbar";
 import Home from './Components/Home'
 import About from './Components/About'
+import RecentProjects from './Components/RecentProjects'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <RecentProjects />
     </div>
   );
 }

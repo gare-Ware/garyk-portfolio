@@ -21,8 +21,8 @@ html {
   --section-header: 1.94rem;
   --site-link: 1.44rem;
   /* --about-body: 1.25rem; */
-  --project-list-title: 1.69rem;
-  --project-list-summary: 1.44rem;
+  --project-summary-name: 1.69rem;
+  --project-summary-description: 1.44rem;
   --project-page-body: 1.25rem;
   --contact-header-and-btn: 1.56rem;
   --contact-message: 1.125rem;
@@ -139,4 +139,27 @@ a {
   display: block;
   margin-bottom: 1em;
   font-size: var(--site-link);
+}
+
+/* ---recent projects--- */
+
+.recent-projects__header {
+  font-weight: var(--h1);
+  font-size: var(--section-header)
+}
+.project-summary {
+  margin: 2.5em 0;
+}
+.project-summary__name {
+  font-weight: var(--h2);
+  font-size: var(--project-summary-name);
+}
+.project-summary__description {
+  color: var(--light-gray);
+  font-size: var(--project-summary-description);
+}
+.project-summary__link {
+  display: block;
+  font-size: var(--site-link);
+  margin-bottom: .5em;
 }
