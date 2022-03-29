@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
   /* colors */
   --black: #111111;
   --dark-gray: #181818;
@@ -45,8 +46,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--black);
   color: var(--gray-white);
-  font-family: var(--site-font);
-  overflow: hidden;
 }
 
 code {
