@@ -16,4 +16,4 @@ export default function About() {
     )
 }
 
-            {/* <p className="about__body">I thus quit my job and have spent the past year learning various web development technologies. I take pride in my ability to grasp languages quickly, and the idea that there will always be more to learn is what excites me most about the industry.</p> */}
+            /* <p className="about__body">I thus quit my job and have spent the past year learning various web development technologies. I take pride in my ability to grasp languages quickly, and the idea that there will always be more to learn is what excites me most about the industry.</p> */

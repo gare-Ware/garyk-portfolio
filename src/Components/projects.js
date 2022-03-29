@@ -1,4 +1,4 @@
-export default [
+const projects = [
     {
         name: "Quizzical",
         summary: "A customizable quiz app made with The Open Trivia Database API.",
@@ -24,3 +24,5 @@ export default [
         githubRepo: "https://github.com/gare-Ware/garyk-portfolio"
     }
 ]
+
+export default projects
