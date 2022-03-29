@@ -67,6 +67,11 @@ button {
   font-weight: var(--h1);
 }
 
+.app {
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
 /* ---content container--- */
 
 .main-content-container {
