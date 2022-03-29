@@ -8,11 +8,11 @@ export default function Contact() {
                 <p className="contact__link-type">Email</p>
                 <p className="contact__link-handle">gary@garyk.dev</p>
             </a>
-            <a href="https://www.linkedin.com/in/garykassee/" target="_blank" className="contact__link">
+            <a href="https://www.linkedin.com/in/garykassee/" target="_blank" rel="noreferrer" className="contact__link">
                 <p className="contact__link-type">LinkedIn</p>
                 <p className="contact__link-handle">/in/garykassee</p>
             </a>
-            <a href="https://twitter.com/gareWare" target="_blank" className="contact__link">
+            <a href="https://twitter.com/gareWare" target="_blank" rel="noreferrer" className="contact__link">
                 <p className="contact__link-type">Twitter</p>
                 <p className="contact__link-handle">gareWare</p>
             </a>
