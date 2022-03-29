@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap');
 
 html {
+  scroll-behavior: smooth;
   /* colors */
   --black: #111111;
   --dark-gray: #181818;
@@ -28,6 +29,7 @@ html {
   --contact-message: 1.125rem;
   --nav-header: 1.25rem;
   --nav-menu: 1.94rem;
+  --nav-contact: 0.875rem;
 }
 
 *, *::after, *::before {
@@ -51,6 +53,12 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+  color: var(--green);
+  font-weight: var(--h3);
+}
+
 button {
   background-color: var(--green);
   color: var(--black);
@@ -59,10 +67,12 @@ button {
   font-weight: var(--h1);
 }
 
-a {
-  text-decoration: none;
-  color: var(--green);
-  font-weight: var(--h3);
+/* ---content container--- */
+
+.main-content-container {
+  height: calc(100vh - 75px);
+  overflow: scroll;
+  scroll-behavior: smooth;
 }
 
 /* ---page container--- */
@@ -84,18 +94,23 @@ a {
   background-color: var(--black);
   top: 0;
   width: 100%;
-  position: fixed;
+  position: sticky;
 }
 .navbar__contact {
   padding: .5em 1em;
   font-family: inherit;
-  font-size: inherit;
+  font-size: var(--nav-contact);
+  font-weight: var(--h1);
+  color: var(--black);
+  background-color: var(--green);
+  border-radius: 20px;
   margin-right: 1em;
 }
 
+
 /* ---home--- */
 .home {
-  margin-top: calc(75px + 1.25em);
+  /* margin-top: calc(75px + 1.25em); */
 }
 .home__header {
   font-weight: var(--h1);
@@ -162,4 +177,27 @@ a {
   display: block;
   font-size: var(--site-link);
   margin-bottom: .5em;
+}
+
+/* ---contact--- */
+
+.contact__header {
+  font-weight: var(--h1);
+  font-size: var(--section-header)
+}
+.contact__link {
+  font-size: var(--site-link);
+}
+.contact__link-type {
+  text-transform: uppercase;
+  font-weight: var(--h2);
+  margin-bottom: -1em;
+}
+.contact__link-handle {
+  color: var(--light-gray);
+  margin-bottom: 1.5em;
+}
+.contact__form-header {
+  font-weight: var(--h3);
+  font-size: var(--contact-header-and-btn);
 }

@@ -1,7 +1,7 @@
 
 export default function About() {
     return (
-        <div className="container about">
+        <div id='about' className="container about">
             <h1 className="about__header">About me</h1>
             <p className="about__body">
             I have an affinity for all things technology. Throughout my life and in any job I’ve had, this has always found a way to prove true. As toddler I spent most of my time tinkering with my computer. As a teenager I would flash custom ROM’s on my smartphone. As a waiter I would be implementing new POS systems to increase efficiency and sales.</p>

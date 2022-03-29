@@ -2,14 +2,18 @@ import Navbar from "./Components/Navbar";
 import Home from './Components/Home'
 import About from './Components/About'
 import RecentProjects from './Components/RecentProjects'
+import Contact from './Components/Contact'
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
-      <About />
-      <RecentProjects />
+      <main className="main-content-container">
+        <Home />
+        <About />
+        <RecentProjects />
+        <Contact />
+      </main>
     </div>
   );
 }

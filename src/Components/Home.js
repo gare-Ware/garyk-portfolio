@@ -2,7 +2,7 @@ import circle from '../imgs/circle.png'
 
 export default function Home() {
     return (
-        <div className="home container">
+        <div id='home' className="home container">
             <h1 className="home__header">
                 Hey, I'm<br/> 
                 Gary
@@ -13,7 +13,7 @@ export default function Home() {
                 based in NJ/NYC
                 </p>
             <p className='home__subheader home__subheader--dark'>specializing in Javascript, React, HTML, and CSS</p>
-            <a href='/' className='home__link'>My Recent Projects ↓</a>
+            <a href='#recent-projects' className='home__link'>My Recent Projects ↓</a>
         </div>
     )
 }
