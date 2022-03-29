@@ -9,7 +9,7 @@ function ProjectSummary(props) {
             <h2 className="project-summary__name">{name}</h2>
             <p className="project-summary__description">{summary}</p>
             <a href={liveSite} className="project-summary__link">Live Site ↗</a>
-            <a href={githubRepo} className="project-summary__link">Github repo ↗</a>
+            <a href="/" className="project-summary__link">More details</a>
         </div>
     )
 }
