@@ -41,7 +41,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: var(--black);
   color: var(--gray-white);
   font-family: var(--site-font);
 }
@@ -81,6 +81,10 @@ a {
   height: 75px;
   border-bottom: solid 3px;
   border-color: var(--dark-gray);
+  background-color: var(--black);
+  top: 0;
+  width: 100%;
+  position: fixed;
 }
 .navbar__contact {
   padding: .5em 1em;
@@ -90,7 +94,9 @@ a {
 }
 
 /* ---home--- */
-
+.home {
+  margin-top: calc(75px + 1.25em);
+}
 .home__header {
   font-weight: var(--h1);
   font-size: var(--home-header);
