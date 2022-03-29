@@ -2,7 +2,7 @@
 import projects from "./projects"
 
 function ProjectSummary(props) {
-    const { name, summary, liveSite, githubRepo } = props.project
+    const { name, summary, liveSite } = props.project
     
     return (
         <div className="project-summary">
@@ -26,16 +26,4 @@ export default function RecentProjects() {
     )
 }
 
-// Create data file as an array of objects
-    // each object is a project
-        // name
-        // summary
-        // img
-        // live site link
-        // repo link
-    // import array to RecentProjects
-    // create functional component ProjectSummary
-        // renders project summary using object from array
-        // either import or create component inside RecentProjects
-    // 
     
