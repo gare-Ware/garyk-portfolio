@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap');
+
+html {
+  /* colors */
+  --black: #111111;
+  --dark-gray: #181818;
+  --medium-gray: #2b2a2a;
+  --light-gray: #7d7d7d;
+  --gray-white: #EBE9E3;
+  --green: #84EEA2;
+  /* font & font-weights */
+  --site-font: 'Montserrat', sans-serif;
+  --h1: 900;
+  --h2: 800;
+  --h3: 700;
+  --body: 600;
+  /* font-sizes */
+  --home-header: 3.125rem;
+  --home-subheader: 1.9rem;
+  --home-link: 1.56rem;
+  --section-header: 1.94rem;
+  --site-link: 1.44rem;
+  /* --about-body: 1.25rem; */
+  --project-list-title: 1.69rem;
+  --project-list-summary: 1.44rem;
+  --project-page-body: 1.25rem;
+  --contact-header-and-btn: 1.56rem;
+  --contact-message: 1.125rem;
+  --nav-header: 1.25rem;
+  --nav-menu: 1.94rem;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +41,92 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: var(--gray-white);
+  font-family: var(--site-font);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+button {
+  background-color: var(--green);
+  border: none;
+  border-radius: 20px;
+  font-weight: var(--h1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--green);
+  font-weight: var(--h3);
+}
+
+/* ---page container--- */
+
+.container {
+  margin: 1.25em;
+  padding-bottom: 4em;
+}
+
+/* ---navbar--- */
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 75px;
+  border-bottom: solid 3px;
+  border-color: var(--dark-gray);
+}
+.navbar__contact {
+  padding: .5em 1em;
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 1em;
+}
+
+/* ---home--- */
+
+.home__header {
+  font-weight: var(--h1);
+  font-size: var(--home-header);
+  margin: 0 0 .65em 0;
+  line-height: 1;
+}
+.home__img {
+  margin-bottom: 1.25em;
+}
+.home__subheader {
+  font-weight: var(--h3);
+  font-size: var(--home-subheader);
+  margin: 0;
+  line-height: 1.35;
+}
+.home__subheader--dark {
+  color: var(--light-gray);
+}
+.home__link {
+  font-size: var(--home-link);
+  display: block;
+  margin-top: 1.5em;
+}
+
+/* ---about me--- */
+
+.about__header {
+  font-weight: var(--h1);
+  font-size: var(--section-header)
+}
+.about__body {
+  font-size: var(--about-body);
+  color: var(--light-gray);
+  line-height: 1.5;
+}
+.about__link {
+  display: block;
+  margin-bottom: 1em;
+  font-size: var(--site-link);
 }
