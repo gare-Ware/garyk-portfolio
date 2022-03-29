@@ -7,7 +7,7 @@ export default function Home() {
                 Hey, I'm<br/> 
                 Gary
             </h1>
-            <img className='home__img' src={circle}/>
+            <img className='home__img' src={circle} alt="professional headshot"/>
             <p className='home__subheader'>
                 a frontend developer<br/>
                 based in NJ/NYC
