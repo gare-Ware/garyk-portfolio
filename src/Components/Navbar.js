@@ -2,7 +2,7 @@
 export default function Navbar() {
     return (
         <nav className="navbar">
-            <button className="navbar__contact green-btn">Contact</button>
+            <button className="navbar__contact">Contact</button>
             {/* <nav className="navbar__menu">
                 <h1 className="navbar__menu-header">Jump to</h1>
                 <ul className="navbar__menu-items">
