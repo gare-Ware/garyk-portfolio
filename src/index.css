@@ -46,6 +46,7 @@ body {
   background-color: var(--black);
   color: var(--gray-white);
   font-family: var(--site-font);
+  overflow: hidden;
 }
 
 code {
@@ -69,7 +70,6 @@ button {
 
 .app {
   /* height: 100vh; */
-  overflow: hidden;
 }
 
 /* ---content container--- */
