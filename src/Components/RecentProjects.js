@@ -9,7 +9,7 @@ function ProjectSummary(props) {
         <div className="project-summary">
             <h1 className="project-summary__name">{name}</h1>
             <p className="project-summary__description">{summary}</p>
-            <a href={liveSite} className="project-summary__link">Live Site ↗</a>
+            <a href={liveSite} className="project-summary__link"  target="_blank" rel="noreferrer">Live Site ↗</a>
             <Link to={`/project-details/${url}`} className="project-summary__link">More details</Link>
         </div>
     )
