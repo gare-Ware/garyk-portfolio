@@ -3,12 +3,13 @@ import projects from "./projects"
 import { Link } from "react-router-dom";
 
 function ProjectSummary(props) {
-    const { name, summary, liveSite, url } = props.project
+    const { name, summary, liveSite, url, screens } = props.project
     
     return (
         <div className="project-summary">
             <h1 className="project-summary__name">{name}</h1>
             <p className="project-summary__description">{summary}</p>
+            <img src={screens} className="project-summary__thumbnail" alt="app screenshot"/>
             <a href={liveSite} className="project-summary__link"  target="_blank" rel="noreferrer">Live Site ↗</a>
             <Link to={`/project-details/${url}`} className="project-summary__link">More details</Link>
         </div>

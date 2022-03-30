@@ -67,8 +67,7 @@ button {
   font-weight: var(--h1);
 }
 
-.App {
-}
+/* .App {} */
 
 main {
   z-index: -100;
@@ -155,9 +154,12 @@ main {
 .navbar__burger {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   cursor: pointer;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
 }
 .navbar__burger-btn {
   width: 18px;
@@ -192,9 +194,7 @@ main {
 
 /* ---home--- */
 
-.home {
-  /* margin-top: calc(75px + 1.25em); */
-}
+/* .home {} */
 .home__header {
   font-weight: var(--h1);
   font-size: var(--home-header);
@@ -258,6 +258,11 @@ main {
   color: var(--light-gray);
   font-size: var(--project-summary-description);
 }
+.project-summary__thumbnail {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
 .project-summary__link {
   display: block;
   font-size: var(--site-link);
@@ -266,10 +271,14 @@ main {
 
 /* ---project details--- */
 
-.project-details {}
+/* .project-details {} */
 .project-details__header {
   font-weight: var(--h1);
   font-size: var(--section-header)
+}
+.project-details__screenshot {
+  max-width: 100%;
+  border-radius: 10px;
 }
 .project-details__description {
   color: var(--light-gray);

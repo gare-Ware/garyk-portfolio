@@ -11,10 +11,10 @@ export default function Navbar() {
     return (
         <>
             <header className="navbar">
-                <div className={menuOpen ? "navbar__burger open" : "navbar_burger"} onClick={toggleMenu} >
+                <div className={menuOpen ? "navbar__burger open" : "navbar__burger"} onClick={toggleMenu} >
                     <div className="navbar__burger-btn"></div>
                 </div>
-                <HashLink smooth to="/#contact" className="navbar__contact">Contact</HashLink>
+                <HashLink smooth to="/#contact" className="navbar__contact" onClick={toggleMenu}>Contact</HashLink>
             </header>
             <nav className={menuOpen ? "navbar__menu active" : "navbar__menu"}>
                 <h1 className="navbar__menu-header">Jump to</h1>
