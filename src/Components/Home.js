@@ -1,4 +1,3 @@
-import circle from '../imgs/circle.png'
 import headshot from '../imgs/headshot.jpeg'
 
 export default function Home() {
