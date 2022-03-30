@@ -1,5 +1,6 @@
 
 import projects from "./projects"
+import { Link } from "react-router-dom";
 
 function ProjectSummary(props) {
     const { name, summary, liveSite } = props.project
@@ -9,7 +10,8 @@ function ProjectSummary(props) {
             <h1 className="project-summary__name">{name}</h1>
             <p className="project-summary__description">{summary}</p>
             <a href={liveSite} className="project-summary__link">Live Site ↗</a>
-            <a href="/" className="project-summary__link">More details</a>
+
+            <Link to="/project-details" className="project-summary__link">More details</Link>
         </div>
     )
 }
@@ -26,4 +28,4 @@ export default function RecentProjects() {
     )
 }
 
-    
+//              {/* <a href="/" className="project-summary__link">More details</a> */}
