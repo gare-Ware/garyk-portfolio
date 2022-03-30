@@ -1,5 +1,6 @@
 
 import { useState } from "react"
+import { HashLink } from 'react-router-hash-link'
 
 export default function Navbar() {
     
@@ -13,15 +14,15 @@ export default function Navbar() {
                 <div className={menuOpen ? "navbar__burger open" : "navbar_burger"} onClick={toggleMenu} >
                     <div className="navbar__burger-btn"></div>
                 </div>
-                <a href="#contact" className="navbar__contact">Contact</a>
+                <HashLink smooth to="/#contact" className="navbar__contact">Contact</HashLink>
             </header>
             <nav className={menuOpen ? "navbar__menu active" : "navbar__menu"}>
                 <h1 className="navbar__menu-header">Jump to</h1>
                 <ul className="navbar__menu-items" onClick={toggleMenu}>
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#recent-projects">Recent projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><HashLink smooth to="/#top">Home</HashLink></li>
+                    <li><HashLink smooth to="/#about">About</HashLink></li>
+                    <li><HashLink smooth to="/#recent-projects">Recent projects</HashLink></li>
+                    <li><HashLink smooth to="/#contact">Contact</HashLink></li>
                 </ul>
             </nav>
         </>

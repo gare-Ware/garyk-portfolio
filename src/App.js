@@ -4,9 +4,18 @@ import About from './Components/About'
 import RecentProjects from './Components/RecentProjects'
 import Contact from './Components/Contact'
 import ProjectDetails from "./Pages/ProjectDetails";
+import projects from "./Components/projects";
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
+  
+  const projectPages = projects.map(obj => (
+    <Route 
+      path={`/project-details/${obj.url}`}
+      element={<ProjectDetails project={obj} />}
+    />
+  ))
+
   return (
     <div className="App">
       <Navbar />
@@ -20,8 +29,7 @@ function App() {
               <Contact />
             </>
           } />
-          <Route path="/project-details" element={<ProjectDetails />}/>
-
+          {projectPages}
         </Routes>
       </main>
     </div>
@@ -29,22 +37,3 @@ function App() {
 }
 
 export default App;
-
-
-/* 
-Site map 
-  - App components
-    - Navbar component
-      - hamburger icon custom animates to x when menu open
-      - contact button
-        - button class
-      - navmenu
-    - home
-    - about
-    - recent projects
-      - project page component
-      - route to show different project pages
-    - contact
-      - contact form component
-    - external link component
-*/
