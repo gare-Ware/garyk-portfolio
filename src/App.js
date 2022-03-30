@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <main className="main-content-container">
+      <main>
         <Home />
         <About />
         <RecentProjects />

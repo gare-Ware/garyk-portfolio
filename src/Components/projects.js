@@ -7,13 +7,13 @@ const projects = [
     },
     {
         name: "Snake",
-        summary: "Classic snake game with retro-inspired design and animations.",
+        summary: "A classic snake game with retro-inspired design and animations.",
         liveSite: "https://gk-snakegame.netlify.app//",
         githubRepo: "https://github.com/gare-Ware/Snake-Game" 
     },
     {
         name: "Abzijgen",
-        summary: "A promotional website for a local startup CBD company.",
+        summary: "A promotional website for a local startup CBD company, themed to match their logo.",
         liveSite: "https://abzijgen.com/",
         githubRepo: "https://github.com/gare-Ware/Abzijgen" 
     },

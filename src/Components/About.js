@@ -11,7 +11,6 @@ export default function About() {
             <p className="about__body">I am thrilled to pursue a career in work that I enjoy doing even in my free time. I have established some ambitious goals for myself and my journey to achieve them has begun. Please reach out if you would like to take part!</p>
 
             <a href="/" className="about__link">View resume (PDF) ↗</a>
-            <a href="/" className="about__link">Contact me</a>
         </div>
     )
 }
