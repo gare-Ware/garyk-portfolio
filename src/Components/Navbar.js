@@ -18,7 +18,7 @@ export default function Navbar() {
             <nav className={menuOpen ? "navbar__menu active" : "navbar__menu"}>
                 <h1 className="navbar__menu-header">Jump to</h1>
                 <ul className="navbar__menu-items" onClick={toggleMenu}>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#top">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#recent-projects">Recent projects</a></li>
                     <li><a href="#contact">Contact</a></li>
