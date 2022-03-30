@@ -1,4 +1,5 @@
 import circle from '../imgs/circle.png'
+import headshot from '../imgs/headshot.jpeg'
 
 export default function Home() {
     return (
@@ -7,7 +8,7 @@ export default function Home() {
                 Hey, I'm<br/> 
                 Gary
             </h1>
-            <img className='home__img' src={circle} alt="professional headshot"/>
+            <img className='home__img' src={headshot} alt="professional headshot"/>
             <p className='home__subheader'>
                 a frontend developer<br/>
                 based in NJ/NYC

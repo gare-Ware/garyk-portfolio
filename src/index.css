@@ -203,6 +203,8 @@ main {
 }
 .home__img {
   margin-bottom: 1.25em;
+  border-radius: 50%;
+  width: 35%;
 }
 .home__subheader {
   font-weight: var(--h3);
@@ -245,7 +247,10 @@ main {
   font-size: var(--section-header)
 }
 .project-summary {
-  margin: 2.5em 0;
+  margin: 3.5em 0;
+}
+.project-summary:nth-of-type(1) {
+  margin-top: 2.5em;
 }
 .project-summary:nth-last-of-type(1) {
   margin-bottom: 0;
