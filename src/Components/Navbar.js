@@ -15,6 +15,14 @@ export default function Navbar() {
                 <div className={menuOpen ? "navbar__burger open" : "navbar__burger"} onClick={toggleMenu} >
                     <div className="navbar__burger-btn"></div>
                 </div>
+                <nav className="navbar__menu-large-screen">
+                    <ul className="navbar__menu-items" onClick={closeMenu}>
+                        <li><HashLink smooth to="/#top">Home</HashLink></li>
+                        <li><HashLink smooth to="/#about">About</HashLink></li>
+                        <li><HashLink smooth to="/#recent-projects">Recent projects</HashLink></li>
+                    </ul>
+                    <HashLink smooth to="/#contact" className="navbar__contact navbar__contact-large-screen" onClick={closeMenu}>Contact</HashLink>
+                </nav>
                 <HashLink smooth to="/#contact" className="navbar__contact" onClick={closeMenu}>Contact</HashLink>
             </header>
             <nav className={menuOpen ? "navbar__menu active" : "navbar__menu"}>

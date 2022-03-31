@@ -1,4 +1,5 @@
 import headshot from '../imgs/headshot.jpeg'
+import { FaArrowDown } from 'react-icons/fa'
 
 export default function Home() {
     return (
@@ -12,7 +13,7 @@ export default function Home() {
                 based in NJ/NYC
             </p>
             <p className='home__subheader home__subheader--dark'>specializing in Javascript, React, HTML, and CSS</p>
-            <a href='#recent-projects' className='home__link'>My recent projects ↓</a>
+            <a href='#recent-projects' className='home__link'>My recent projects <FaArrowDown className='home__link-icon'/></a>
         </div>
     )
 }

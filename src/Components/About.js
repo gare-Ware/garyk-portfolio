@@ -1,3 +1,4 @@
+import { FaRegFilePdf } from 'react-icons/fa'
 
 export default function About() {
     return (
@@ -10,7 +11,7 @@ export default function About() {
                 <p className="about__body">I spent many years on a quest to sharpen my soft skills. But as I’ve gotten older, I've naturally returned to my roots. I am driven to finally pursue my true passion and commit to the world of web development. I have established some ambitious goals for myself and my journey to achieve them has begun. Please reach out if you would like to take part!</p>
             </div>
 
-            <a href="/" className="about__link">View resume (PDF) ↗</a>
+            <a href="/" className="about__link">View resume <FaRegFilePdf className="about__link-icon" /></a>
         </div>
     )
 }

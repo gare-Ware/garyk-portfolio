@@ -9,6 +9,8 @@ html {
   --light-gray: #7d7d7d;
   --gray-white: #EBE9E3;
   --green: #84EEA2;
+  --darker-green: #2a9749; 
+  --blueish-purple: #738ad4;
   /* font & font-weights */
   --site-font: 'Montserrat', sans-serif;
   --h1: 900;
@@ -29,6 +31,7 @@ html {
   --contact-message: 1.125rem;
   --nav-header: 1.1rem;
   --nav-menu: 1.94rem;
+  --nav-menu-desktop: 1.3rem;
   --nav-contact: 0.875rem;
 }
 
@@ -126,6 +129,7 @@ button {
 }
 .navbar__menu.active {
   top: 75px;
+  transition: 600ms;
 }
 .navbar__menu-header {
   font-weight: var(--h1);
@@ -185,6 +189,9 @@ button {
 .navbar__burger.open .navbar__burger-btn::after {
   transform: rotate(-45deg);
 }
+.navbar__menu-large-screen {
+  display: none;
+}
 
 /* ---home--- */
 
@@ -215,6 +222,10 @@ button {
   font-size: var(--home-link);
   display: block;
   margin-top: 1.5em;
+  /* border: solid red; */
+}
+.home__link-icon {
+  font-size: calc(var(--home-link) - .3em);
 }
 
 /* ---about me--- */
@@ -234,6 +245,9 @@ button {
 .about__link {
   display: block;
   font-size: var(--site-link);
+}
+.about__link-icon {
+  font-size: calc(var(--site-link) - .1em);
 }
 
 /* ---recent projects--- */
@@ -270,6 +284,9 @@ button {
   font-size: var(--site-link);
   margin-bottom: .5em;
 }
+.project-summary__link-icon {
+  font-size: calc(var(--site-link) - .2em);
+}
 
 /* ---project details--- */
 
@@ -304,9 +321,14 @@ button {
 .contact__link-type {
   text-transform: uppercase;
   font-weight: var(--h2);
-  margin-bottom: -1em;
+  margin-bottom: -1.1em;
+}
+.contact__link-type-icon {
+  vertical-align: middle;
+  margin-bottom: .2em;
 }
 .contact__link-handle {
+  font-size: var(--site-link);
   color: var(--light-gray);
   margin-bottom: 1.5em;
 }
@@ -354,7 +376,75 @@ button {
     /* font-sizes */
     --home-subheader: 2rem;
     --home-link: 1.7rem;
+    --site-link: 1.4rem;
     --section-header: 2.7rem;
+  }
+
+  main a {
+    transition: 300ms;
+    width: fit-content;
+  }
+
+  main a:hover, a:focus {
+    transform: scale(1.05);
+  }
+
+  main a:active {
+    color: var(--darker-green);
+    transform: translateY(2px);
+  }
+
+  /* ---navbar--- */
+
+  .navbar {
+    justify-content: center;
+  }
+  .navbar__contact {
+    transition: 300ms;
+    display: none;
+  }
+  .navbar__contact-large-screen {
+    display: block;
+  }
+  .navbar__contact:hover, .navbar__contact:focus {
+    background-color: var(--gray-white);
+    transform: scale(1.05);
+  }
+  .navbar__contact:active {
+    transform: translateY(2px)
+  }
+  .navbar__burger, .navbar__menu {
+    display: none;
+  }
+  .navbar__menu-large-screen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1099px;
+  }
+  .navbar__menu-items {
+    height: 100%;
+    width: 400px;
+    flex-direction: row;
+    font-size: var(--nav-menu-desktop);
+  }
+  .navbar__menu-items li {
+    transition: 300ms;
+  }
+
+  .navbar__menu-items li:hover, .navbar__menu-items li:focus {
+    transform: scale(1.05);
+  }
+
+  .navbar__menu-items li a:hover, .navbar__menu-items li a:focus {
+    color: var(--green);
+    transform: scale(1.05);
+  }
+
+  .navbar__menu-items li:active {
+    color: var(--darker-green);
+    transform: translateY(2px);
   }
 
   /* ---page container--- */
@@ -381,6 +471,7 @@ button {
     width: 70%;
     grid-row: 2/4;
     grid-column: 1/2;
+    margin-top: 1em;
   }
   .home__subheader {
     grid-row: 2/3;
@@ -394,9 +485,17 @@ button {
   }
   .home__link {
     margin-top: .2em;
-    grid-row: 2/4;
+    grid-row: 2/3;
     grid-column: 3/4;
     justify-self: center;
+    height: fit-content;
+    padding: 0 1em 1em 1em;
+  }
+  .home__link:hover, .home__link:focus {
+    transform: scale(1.15);
+  }
+  .home__link:active {
+    transform: translateY(2px);
   }
 
   /* ---about--- */
@@ -427,11 +526,16 @@ button {
   .project-summary:nth-of-type(1) {
     margin-top: 0;
   }
+
+  /* ---contact--- */
+
+  .contact__link-type {
+    transition: 300ms;
+    width: fit-content;
+  }
+  .contact__link-type:hover, .contact__link:focus {
+    transform: scale(1.05);
+  }
+
 }
 
-/* 
-@media (min-width: 1201px) {
-  .container {
-    max-width: 1099px;
-  }
-} */

@@ -6,7 +6,7 @@ import portfolioHome from "../imgs/portfolio-screens/portfolio-home.png"
 const projects = [
     {
         name: "Quizzical",
-        summary: "A customizable quiz app made with The Open Trivia Database API.",
+        summary: "A customizable quiz app built with React and The Open Trivia Database API.",
         liveSite: "https://gk-quizzical.netlify.app/",
         githubRepo: "https://github.com/gare-Ware/Quizzical" ,
         url: "quizzical",
@@ -22,7 +22,7 @@ const projects = [
     },
     {
         name: "Abzijgen",
-        summary: "A promotional website for a local startup CBD company, themed to match their logo.",
+        summary: "A promotional website for a New Jersey startup CBD company, themed to match their logo.",
         liveSite: "https://abzijgen.com/",
         githubRepo: "https://github.com/gare-Ware/Abzijgen",
         url: "abzijgen",
@@ -30,7 +30,7 @@ const projects = [
     },
     {
         name: "My Portfolio (this site!)",
-        summary: "A user friendly and accessible portfolio website featuring a sleek dark UI.",
+        summary: "A user friendly and accessible portfolio website featuring a sleek dark UI. Built with React.",
         liveSite: "https://garyk.dev/",
         githubRepo: "https://github.com/gare-Ware/garyk-portfolio",
         url: "my-portfolio",

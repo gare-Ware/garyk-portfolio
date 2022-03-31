@@ -1,17 +1,18 @@
 
 import projects from "./projects"
-import { Link } from "react-router-dom";
+import { FaExternalLinkAlt } from 'react-icons/fa'
+// import { Link } from "react-router-dom";
 
 function ProjectSummary(props) {
-    const { name, summary, liveSite, url, screens } = props.project
+    const { name, summary, liveSite, githubRepo, screens } = props.project
     
     return (
         <div className="project-summary">
             <h1 className="project-summary__name">{name}</h1>
             <p className="project-summary__description">{summary}</p>
             <img src={screens} className="project-summary__thumbnail" alt="app screenshot"/>
-            <a href={liveSite} className="project-summary__link"  target="_blank" rel="noreferrer">Live Site ↗</a>
-            <Link to={`/project-details/${url}`} className="project-summary__link">More details</Link>
+            <a href={liveSite} className="project-summary__link" target="_blank" rel="noreferrer">Live Site <FaExternalLinkAlt className="project-summary__link-icon" /></a>
+            <a href={githubRepo} className="project-summary__link" target="_blank" rel="noreferrer">Github repo <FaExternalLinkAlt className="project-summary__link-icon" /></a>
         </div>
     )
 }
@@ -29,3 +30,5 @@ export default function RecentProjects() {
 }
 
 // imgs 335x200...on iphone x viewport
+
+// <Link to={`/project-details/${url}`} className="project-summary__link">More details</Link>
