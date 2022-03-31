@@ -74,16 +74,12 @@ button {
   align-items: center;
 }
 
-main {
-  z-index: -100;
-}
-
 /* ---page container--- */
 
 .container {
   margin: 1.25em;
   padding-top: 4em;
-  max-width: 1110px;
+  max-width: 1099px;
 }
 .container:nth-of-type(1) {
   padding-top: 0;
@@ -352,15 +348,9 @@ main {
 
   html {
     /* font-sizes */
-    --home-header: 5rem;
     --home-subheader: 2rem;
     --home-link: 1.7rem;
     --section-header: 2.7rem;
-    --site-link: 1.6rem;
-    --about-body: 1.25rem;
-    --project-summary-name: 2rem;
-    --contact-header-and-btn: 1.56rem;
-    --nav-contact: 1rem;
   }
 
   /* ---page container--- */
@@ -407,9 +397,6 @@ main {
 
   /* ---about--- */
 
-  .about {
-    /* padding-top: 1em; */
-  }
   .about__header {
     margin-bottom: 0.5em;
   }
@@ -438,8 +425,9 @@ main {
   }
 }
 
+/* 
 @media (min-width: 1201px) {
   .container {
     max-width: 1099px;
   }
-}
+} */
