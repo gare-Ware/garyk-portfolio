@@ -23,7 +23,9 @@ export default function RecentProjects() {
     return (
         <div id="recent-projects" className="container recent-projects">
             <h1 className="recent-projects__header">Recent projects</h1>
-            {projectElements}
+            <div className="recent-projects__container">{projectElements}</div>
         </div>
     )
 }
+
+// imgs 335x200...on iphone x viewport

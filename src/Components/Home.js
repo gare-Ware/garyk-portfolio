@@ -4,8 +4,7 @@ export default function Home() {
     return (
         <div id='home' className="home container">
             <h1 className="home__header">
-                Hey, I'm<br/> 
-                Gary
+                Hey, I'm <span>Gary</span>
             </h1>
             <img className='home__img' src={headshot} alt="professional headshot"/>
             <p className='home__subheader'>

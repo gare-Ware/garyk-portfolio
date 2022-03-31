@@ -30,7 +30,7 @@ const projects = [
     },
     {
         name: "My Portfolio (this site!)",
-        summary: "A user friendly and accessible portfolio website featuring a gorgeous UI.",
+        summary: "A user friendly and accessible portfolio website featuring a sleek dark UI.",
         liveSite: "https://garyk.dev/",
         githubRepo: "https://github.com/gare-Ware/garyk-portfolio",
         url: "my-portfolio",
