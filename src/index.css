@@ -341,6 +341,10 @@ button {
   .navbar {
     padding: 0 2em;
   }
+  .navbar__menu {
+    padding: 0 2.25em;
+  }
+
 }
 
 
@@ -386,7 +390,7 @@ button {
   .home__subheader--dark {
     grid-row: 3/4;
     grid-column: 2/3;
-    margin-top: -2.4em;
+    margin-top: -2.35em;
   }
   .home__link {
     margin-top: .2em;

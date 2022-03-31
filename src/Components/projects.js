@@ -1,7 +1,7 @@
 import quizzicalAnswers from "../imgs/quizzical-screens/quizzical-answers.png"
 import snakeHome from "../imgs/snake-screens/snake-gameplay.png"
 import abzijgenComingsoon from "../imgs/abzijgen-screens/abzijgen-comingsoon.png"
-import portfolioMockup from "../imgs/portfolio-screens/portfolio-mockup.png"
+import portfolioHome from "../imgs/portfolio-screens/portfolio-home.png"
 
 const projects = [
     {
@@ -34,7 +34,7 @@ const projects = [
         liveSite: "https://garyk.dev/",
         githubRepo: "https://github.com/gare-Ware/garyk-portfolio",
         url: "my-portfolio",
-        screens: portfolioMockup
+        screens: portfolioHome
     }
 ]
 
