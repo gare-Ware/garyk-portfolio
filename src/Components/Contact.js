@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FaRegEnvelope, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
+import { FaRegEnvelope, FaLinkedinIn, FaTwitter, FaGithub } from 'react-icons/fa'
 
 export default function Contact() {
     
@@ -18,7 +18,7 @@ export default function Contact() {
         <div id='contact' className="container contact">
             <h1 className="contact__header">Contact me</h1>
             <div className='contact__handles'>
-                <a href="home" className="contact__link">
+                <a href="mailto:gary@garyk.dev" className="contact__link">
                     <p className="contact__link-type">Email <FaRegEnvelope className='contact__link-type-icon'/></p>
                 </a>
                 <p className="contact__link-handle">gary@garyk.dev</p>
@@ -30,6 +30,10 @@ export default function Contact() {
                     <p className="contact__link-type">Twitter <FaTwitter className='contact__link-type-icon'/></p>
                 </a>
                 <p className="contact__link-handle">gareWare</p>
+                <a href="https://github.com/gare-Ware" target="_blank" rel="noreferrer" className="contact__link">
+                    <p className="contact__link-type">Github <FaGithub className='contact__link-type-icon'/></p>
+                </a>
+                <p className="contact__link-handle">gare-Ware</p>
             </div>
             <div className='contact__message'>
                 <h2 className="contact__message-header">Send me a message:</h2>
