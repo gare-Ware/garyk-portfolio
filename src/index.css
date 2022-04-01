@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
   /* colors */
   --black: #111111;
   --dark-gray: #181818;
@@ -333,7 +334,6 @@ button {
   color: var(--light-gray);
   margin-bottom: 1.5em;
 }
-.contact__message {}
 .contact__message-header {
   font-weight: var(--h3);
   font-size: var(--contact-header-and-btn);
