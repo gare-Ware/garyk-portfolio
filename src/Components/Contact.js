@@ -1,18 +1,36 @@
-import { useState } from 'react'
+import emailjs from '@emailjs/browser'
+import { useState, useRef } from 'react'
 import { FaRegEnvelope, FaLinkedinIn, FaTwitter, FaGithub } from 'react-icons/fa'
 
 export default function Contact() {
-    
-    const [subjectInput, setSubjectInput] = useState("")
-    const [messageInput, setMessageInput] = useState("")
-    
+    const form = useRef()
+    const [formInput, setFormInput] = useState({
+        emailInput: "",
+        subjectInput: "",
+        messageInput: ""
+    })
+
     const handleChange = e => {
-        const value = e.target.value
-        const name = e.target.name
-        name === 'subjectInput'
-            ? setSubjectInput(value)
-            : setMessageInput(value)
+        const { name, value } = e.target
+        setFormInput(prevInput => ({
+            ...prevInput,
+            [name]: value
+        }))
     }
+
+    // add loading indicator while form submitting
+    const handleSubmit = e => {
+        e.preventDefault();
+        emailjs.sendForm('service_zgnvac9', 'template_7eyss0i', form.current, 'LvJXPFneuivSpJduu')
+        .then((result) => {
+            console.log(result.text);
+            window.location.reload(false)
+        }, (error) => {
+            console.log(error.text);
+        });
+    }
+
+    const { emailInput, subjectInput, messageInput } = formInput
 
     return (
         <div id='contact' className="container contact">
@@ -37,8 +55,17 @@ export default function Contact() {
             </div>
             <div className='contact__message'>
                 <h2 className="contact__message-header">Send me a message:</h2>
-
-                <form id='message' className='contact__message-form'>
+                <form ref={form} onSubmit={handleSubmit} className='contact__message-form'>
+                <label>
+                        Email
+                        <input 
+                            name='emailInput'
+                            type='email'
+                            value={emailInput}
+                            onChange={handleChange}
+                            required
+                        />
+                    </label>
                     <label>
                         Subject
                         <input 
@@ -52,7 +79,6 @@ export default function Contact() {
                         Message
                         <textarea 
                             name='messageInput'
-                            type='text'
                             value={messageInput}
                             onChange={handleChange}
                             required
@@ -60,7 +86,6 @@ export default function Contact() {
                     </label>
                     <button type='submit'>Send</button>
                 </form>
-
             </div>
         </div>
     )
