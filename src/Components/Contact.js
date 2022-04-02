@@ -1,14 +1,20 @@
 import emailjs from '@emailjs/browser'
 import { useState, useRef } from 'react'
-import { FaRegEnvelope, FaLinkedinIn, FaTwitter, FaGithub } from 'react-icons/fa'
+import { FaRegEnvelope, FaLinkedinIn, FaTwitter, FaGithub, FaCheckCircle } from 'react-icons/fa'
 
 export default function Contact() {
     const form = useRef()
+    const [formLoading, setFormLoading] = useState(false)
+    const [formJustSubmitted, setFormJustSubmitted] = useState(false)
     const [formInput, setFormInput] = useState({
         emailInput: "",
         subjectInput: "",
         messageInput: ""
     })
+    const buttonStyles = {
+        backgroundColor: "var(--gray-white)",
+        transition: "300ms"
+    }
 
     const handleChange = e => {
         const { name, value } = e.target
@@ -18,19 +24,27 @@ export default function Contact() {
         }))
     }
 
-    // add loading indicator while form submitting
     const handleSubmit = e => {
         e.preventDefault();
+        setFormLoading(true)
         emailjs.sendForm('service_zgnvac9', 'template_7eyss0i', form.current, 'LvJXPFneuivSpJduu')
         .then((result) => {
-            console.log(result.text);
-            window.location.reload(false)
+            console.log(result.text)
         }, (error) => {
-            console.log(error.text);
-        });
+            console.log(error.text)
+        })
+        .finally(() => {
+            setFormLoading(false)
+            setFormJustSubmitted(true)
+            setTimeout(() => {
+                window.location.reload(false)
+                setFormJustSubmitted(false)
+            }, 1000)
+        })
     }
 
     const { emailInput, subjectInput, messageInput } = formInput
+    const buttonText = formJustSubmitted ? <FaCheckCircle className='contact__check-icon' /> : "Send"
 
     return (
         <div id='contact' className="container contact">
@@ -84,7 +98,11 @@ export default function Contact() {
                             required
                         />
                     </label>
-                    <button type='submit'>Send</button>
+                    <button type='submit' style={formJustSubmitted ? buttonStyles : null}>
+                        {formLoading
+                            ? <div className='loading-spinner'></div>
+                            : buttonText}
+                    </button>
                 </form>
             </div>
         </div>

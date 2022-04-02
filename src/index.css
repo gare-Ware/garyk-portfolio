@@ -366,6 +366,20 @@ button {
   margin-top: .5em;
 }
 
+.loading-spinner {
+  margin: auto;
+  border: 5px solid #57c576;
+  border-radius: 50%;
+  border-top: 5px solid var(--darker-green);
+  width: 30px;
+  height: 30px;
+  animation: spinner 1s linear infinite;
+}
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg);}
+}
+
 @media (min-width: 768px) {
 
   html {
@@ -595,7 +609,8 @@ button {
     transform: scale(1.05);
   }
   .contact__message-form button {
-    padding: .5em 2.5em;
+    padding: .5em 0;
+    width: 175px;
     margin-top: .5em;
     align-self: flex-end;
     cursor: pointer;
@@ -607,6 +622,10 @@ button {
   }
   .contact__message-form button:active {
     transform: translateY(2px)
+  }
+  .contact__check-icon {
+    vertical-align: middle;
+    margin-top: -.2em;
   }
 }
 
