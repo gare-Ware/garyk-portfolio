@@ -2,6 +2,7 @@ import quizzicalAnswers from "../imgs/quizzical-screens/quizzical-answers.png"
 import snakeHome from "../imgs/snake-screens/snake-gameplay.png"
 import abzijgenComingsoon from "../imgs/abzijgen-screens/abzijgen-comingsoon.png"
 import portfolioHome from "../imgs/portfolio-screens/portfolio-home.png"
+import speedTypingHome from '../imgs/speed-typing-screens/speed-typing-active.png'
 
 const projects = [
     {
@@ -35,6 +36,14 @@ const projects = [
         githubRepo: "https://github.com/gare-Ware/garyk-portfolio",
         url: "my-portfolio",
         screens: portfolioHome
+    },
+    {
+        name: "Speed Typing",
+        summary: "A stylish and fun speed typing game built with React using Custom Hooks.",
+        liveSite: "https://gk-speedtyping.netlify.app/",
+        githubRepo: "https://github.com/gare-Ware/speed-typing.git",
+        url: "speed-typing",
+        screens: speedTypingHome
     }
 ]
 
