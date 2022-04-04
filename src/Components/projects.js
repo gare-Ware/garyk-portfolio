@@ -3,6 +3,7 @@ import snakeHome from "../imgs/snake-screens/snake-gameplay.png"
 import abzijgenComingsoon from "../imgs/abzijgen-screens/abzijgen-comingsoon.png"
 import portfolioHome from "../imgs/portfolio-screens/portfolio-home.png"
 import speedTypingHome from '../imgs/speed-typing-screens/speed-typing-active.png'
+import tenziesGameplay from '../imgs/tenzies-screens/tenzies-active.png'
 
 const projects = [
     {
@@ -44,6 +45,14 @@ const projects = [
         githubRepo: "https://github.com/gare-Ware/speed-typing.git",
         url: "speed-typing",
         screens: speedTypingHome
+    },
+    {
+        name: "Tenzies",
+        summary: "A simple dice game built with React. High score is maintained via Local Storage.",
+        liveSite: "https://gk-tenzies.netlify.app/",
+        githubRepo: "https://github.com/gare-Ware/Tenzies.git",
+        url: "tenzies",
+        screens: tenziesGameplay
     }
 ]
 
