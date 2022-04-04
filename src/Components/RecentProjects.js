@@ -30,5 +30,6 @@ export default function RecentProjects() {
 }
 
 // imgs 335x200...on iphone x viewport
+// 670x400 double
 
 // <Link to={`/project-details/${url}`} className="project-summary__link">More details</Link>
