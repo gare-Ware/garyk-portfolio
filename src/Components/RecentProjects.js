@@ -9,8 +9,8 @@ function ProjectSummary(props) {
     return (
         <div className="project-summary">
             <h1 className="project-summary__name">{name}</h1>
-            <p className="project-summary__description">{summary}</p>
             <img src={screens} className="project-summary__thumbnail" alt="app screenshot"/>
+            <p className="project-summary__description">{summary}</p>
             <a href={liveSite} className="project-summary__link" target="_blank" rel="noreferrer">Live Site <FaExternalLinkAlt className="project-summary__link-icon" /></a>
             <a href={githubRepo} className="project-summary__link" target="_blank" rel="noreferrer">Github repo <FaExternalLinkAlt className="project-summary__link-icon" /></a>
         </div>

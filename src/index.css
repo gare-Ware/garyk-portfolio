@@ -234,12 +234,13 @@ button {
 
 .about__header {
   font-weight: var(--h1);
-  font-size: var(--section-header)
+  font-size: var(--section-header);
 }
 .about__body {
   font-size: var(--about-body);
   color: var(--light-gray);
   line-height: 1.5;
+  margin-top: 0;
 }
 .about__body:nth-last-of-type(1) {
   margin-bottom: 2em;
@@ -275,6 +276,7 @@ button {
 .project-summary__description {
   color: var(--light-gray);
   font-size: var(--project-summary-description);
+  margin-top: 0;
 }
 .project-summary__thumbnail {
   max-width: 100%;
@@ -317,6 +319,9 @@ button {
   font-weight: var(--h1);
   font-size: var(--section-header)
 }
+.contact__handles {
+  width: fit-content;
+}
 .contact__link {
   font-size: var(--site-link);
 }
@@ -333,6 +338,7 @@ button {
   font-size: var(--site-link);
   color: var(--light-gray);
   margin-bottom: 1.5em;
+  width: fit-content;
 }
 .contact__message-header {
   font-weight: var(--h3);

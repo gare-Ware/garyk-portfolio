@@ -48,7 +48,7 @@ const projects = [
     },
     {
         name: "Tenzies",
-        summary: "A simple dice game built with React. High score is maintained via Local Storage.",
+        summary: "A simple dice game built with React. High score is maintained via Local Storage. Die images rendered in CSS using flexbox.",
         liveSite: "https://gk-tenzies.netlify.app/",
         githubRepo: "https://github.com/gare-Ware/Tenzies.git",
         url: "tenzies",

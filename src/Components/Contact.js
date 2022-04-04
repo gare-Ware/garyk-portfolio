@@ -1,6 +1,6 @@
 import emailjs from '@emailjs/browser'
 import { useState, useRef } from 'react'
-import { FaRegEnvelope, FaLinkedinIn, FaTwitter, FaGithub, FaCheckCircle } from 'react-icons/fa'
+import { FaEnvelope, FaLinkedinIn, FaTwitter, FaGithub, FaCheckCircle } from 'react-icons/fa'
 
 export default function Contact() {
     const form = useRef()
@@ -51,7 +51,7 @@ export default function Contact() {
             <h1 className="contact__header">Contact me</h1>
             <div className='contact__handles'>
                 <a href="mailto:gary@garyk.dev" className="contact__link">
-                    <p className="contact__link-type">Email <FaRegEnvelope className='contact__link-type-icon'/></p>
+                    <p className="contact__link-type">Email <FaEnvelope className='contact__link-type-icon'/></p>
                 </a>
                 <p className="contact__link-handle">gary@garyk.dev</p>
                 <a href="https://www.linkedin.com/in/garykassee/" target="_blank" rel="noreferrer" className="contact__link">
