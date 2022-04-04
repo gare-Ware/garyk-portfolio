@@ -29,6 +29,8 @@ export default function RecentProjects() {
     )
 }
 
+
+// <p className="project-summary__description">{summary}</p>
 // imgs 335x200...on iphone x viewport
 // 670x400 double
 

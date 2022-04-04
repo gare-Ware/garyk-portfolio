@@ -8,7 +8,7 @@ import portfolio from '../imgs/portfolio.png'
 const projects = [
     {
         name: "Quizzical",
-        summary: `A customizable quiz app built with React and The Open Trivia Database API.`,
+        summary: <>A customizable quiz app built with <span>React</span> using hooks and <span>reusable functional components</span>. Data <span>fetched</span> and decoded from The Open Trivia Database <span>API</span> then used to create a series of <span>nested arrays and objects</span> which handle the display and user-input.</>,
         liveSite: "https://gk-quizzical.netlify.app/",
         githubRepo: "https://github.com/gare-Ware/Quizzical" ,
         url: "quizzical",
@@ -16,7 +16,7 @@ const projects = [
     },
     {
         name: "My Portfolio (this site!)",
-        summary: "A user friendly and accessible portfolio website featuring a sleek dark UI. Built with React.",
+        summary: <>A user friendly and <span>accessible</span> portfolio website featuring a sleek, dark UI. Built with <span>React</span> using <span>hooks</span> and <span>reusable functional components</span>. <span>EmailJS</span> used to handle form submissions. Features various imports such as <span>Hashlink</span> and <span>React-Icons</span> to create a seamless user-experience.</>,
         liveSite: "https://garyk.dev/",
         githubRepo: "https://github.com/gare-Ware/garyk-portfolio",
         url: "my-portfolio",
@@ -24,7 +24,7 @@ const projects = [
     },
     {
         name: "Abzijgen",
-        summary: "IN PROGRESS - A promotional website for a New Jersey startup CBD company. Themed to mimic their logo and brand.",
+        summary: <><span>IN PROGRESS</span> - A promotional website for a New Jersey startup CBD company. <span>Themed</span> to mimic their brand with <span>SVG images</span> extracted from their product logo and implemented as background elements via <span>CSS</span>. Mockups rendered in <span>Figma</span>. </>,
         liveSite: "https://abzijgen.com/",
         githubRepo: "https://github.com/gare-Ware/Abzijgen",
         url: "abzijgen",
@@ -32,7 +32,8 @@ const projects = [
     },
     {
         name: "Snake",
-        summary: "A classic snake game with retro-inspired design and animations.",
+        summary: <>A classic snake game with retro-inspired design and animations. Uses <span>javascript arithmetic</span> to create boundary logic for snake movement. <span>Event listeners</span> and <span>keyboardEvent key properties</span> implement user control for snake. Touch button controls on smaller screens.
+        </>,
         liveSite: "https://gk-snakegame.netlify.app//",
         githubRepo: "https://github.com/gare-Ware/Snake-Game" ,
         url: "snake",
@@ -40,7 +41,7 @@ const projects = [
     },
     {
         name: "Speed Typing",
-        summary: "A stylish and fun speed typing game built with React using Custom Hooks.",
+        summary: <>A stylish and fun speed typing game built with <span>React</span> using <span>custom hooks</span>. User input for time limit.</>,
         liveSite: "https://gk-speedtyping.netlify.app/",
         githubRepo: "https://github.com/gare-Ware/speed-typing.git",
         url: "speed-typing",
@@ -48,7 +49,7 @@ const projects = [
     },
     {
         name: "Tenzies",
-        summary: "A simple dice game built with React.",
+        summary: <>A dice game built with <span>React</span>. High score maintained via <span>local storage</span>. Die images rendered with <span>CSS</span> and <span>flexbox</span>. <span>Npm</span> package <span>react-confetti</span> used for winning animation.</>,
         liveSite: "https://gk-tenzies.netlify.app/",
         githubRepo: "https://github.com/gare-Ware/Tenzies.git",
         url: "tenzies",

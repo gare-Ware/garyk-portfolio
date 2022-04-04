@@ -278,6 +278,9 @@ button {
   font-size: var(--project-summary-description);
   margin-top: 0;
 }
+.project-summary__description span {
+  color: var(--gray-white);
+}
 .project-summary__thumbnail {
   max-width: 100%;
   border-radius: 10px;
@@ -290,10 +293,6 @@ button {
 }
 .project-summary__link-icon {
   font-size: calc(var(--site-link) - .2em);
-}
-
-.keyword {
-  color: white;
 }
 
 /* ---project details--- */
