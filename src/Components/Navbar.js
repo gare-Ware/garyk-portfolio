@@ -1,6 +1,5 @@
 
-import { useState, createRef } from "react"
-import ScrollSpy from "react-ui-scrollspy";
+import { useState } from "react"
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
