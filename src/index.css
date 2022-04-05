@@ -504,6 +504,10 @@ button {
     transform: translateY(2px);
   }
 
+  .navbar__menu-items .active {
+    color: var(--green);
+  }
+
   /* ---page container--- */
 
   .container {
