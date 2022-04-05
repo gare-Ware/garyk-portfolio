@@ -1,6 +1,5 @@
 
 import { useState } from "react"
-import { HashLink } from 'react-router-hash-link'
 
 export default function Navbar() {
     
@@ -17,21 +16,21 @@ export default function Navbar() {
                 </div>
                 <nav className="navbar__menu-large-screen">
                     <ul className="navbar__menu-items" onClick={closeMenu}>
-                        <li><HashLink smooth to="/#top">Home</HashLink></li>
-                        <li><HashLink smooth to="/#about">About</HashLink></li>
-                        <li><HashLink smooth to="/#recent-projects">Recent projects</HashLink></li>
+                        <li><a href="#top" className="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#recent-projects">Recent projects</a></li>
                     </ul>
-                    <HashLink smooth to="/#contact" className="navbar__contact navbar__contact-large-screen" onClick={closeMenu}>Contact</HashLink>
+                    <a href="/#contact" className="navbar__contact navbar__contact-large-screen" onClick={closeMenu}>Contact</a>
                 </nav>
-                <HashLink smooth to="/#contact" className="navbar__contact" onClick={closeMenu}>Contact</HashLink>
+                <a href="/#contact" className="navbar__contact" onClick={closeMenu}>Contact</a>
             </header>
             <nav className={menuOpen ? "navbar__menu active" : "navbar__menu"}>
                 <h1 className="navbar__menu-header">Jump to</h1>
                 <ul className="navbar__menu-items" onClick={closeMenu}>
-                    <li><HashLink smooth to="/#top">Home</HashLink></li>
-                    <li><HashLink smooth to="/#about">About</HashLink></li>
-                    <li><HashLink smooth to="/#recent-projects">Recent projects</HashLink></li>
-                    <li><HashLink smooth to="/#contact">Contact</HashLink></li>
+                    <li><a href="/#top">Home</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="/#recent-projects">Recent projects</a></li>
+                    <li><a href="/#contact">Contact</a></li>
                 </ul>
             </nav>
         </>

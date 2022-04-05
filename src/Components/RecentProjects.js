@@ -1,5 +1,6 @@
 
 import projects from "./projects"
+import { nanoid } from "nanoid"
 import { FaExternalLinkAlt } from 'react-icons/fa'
 // import { Link } from "react-router-dom";
 
@@ -19,7 +20,7 @@ function ProjectSummary(props) {
 
 export default function RecentProjects() {
 
-    const projectElements = projects.map(obj => <ProjectSummary project={obj} />)
+    const projectElements = projects.map(obj => <ProjectSummary project={obj} key={nanoid()} />)
 
     return (
         <div id="recent-projects" className="container recent-projects">

@@ -16,7 +16,7 @@ const projects = [
     },
     {
         name: "My Portfolio (this site!)",
-        summary: <>A user friendly and <span>accessible</span> portfolio website featuring a sleek, dark UI. Built with <span>React</span> using <span>hooks</span> and <span>reusable functional components</span>. <span>EmailJS</span> used to handle form submissions. Features various imports such as <span>Hashlink</span> and <span>React-Icons</span> to create a seamless user-experience.</>,
+        summary: <>A user friendly and <span>accessible</span> portfolio website featuring a sleek, dark UI. Built with <span>React</span> using <span>hooks</span> and <span>reusable functional components</span>. <span>EmailJS</span> used to handle form submissions. Features <span>React-Icons</span> and bold <span>typography</span> to create a seamless user-experience.</>,
         liveSite: "https://garyk.dev/",
         githubRepo: "https://github.com/gare-Ware/garyk-portfolio",
         url: "my-portfolio",
@@ -24,7 +24,7 @@ const projects = [
     },
     {
         name: "Abzijgen",
-        summary: <><span>IN PROGRESS</span> - A promotional website for a New Jersey startup CBD company. <span>Themed</span> to mimic their brand with <span>SVG images</span> extracted from their product logo and implemented as background elements via <span>CSS</span>. Mockup rendered in <span>Figma</span>. </>,
+        summary: <><span>IN PROGRESS</span> A promotional website for a New Jersey startup CBD company. <span>Themed</span> to mimic their brand with <span>SVG images</span> extracted from their product logo and implemented as background elements via <span>CSS</span>. Mockup rendered in <span>Figma</span>. </>,
         liveSite: "https://abzijgen.com/",
         githubRepo: "https://github.com/gare-Ware/Abzijgen",
         url: "abzijgen",
