@@ -24,7 +24,7 @@ const projects = [
     },
     {
         name: "Abzijgen",
-        summary: <><span>IN PROGRESS</span> - A promotional website for a New Jersey startup CBD company. <span>Themed</span> to mimic their brand with <span>SVG images</span> extracted from their product logo and implemented as background elements via <span>CSS</span>. Mockups rendered in <span>Figma</span>. </>,
+        summary: <><span>IN PROGRESS</span> - A promotional website for a New Jersey startup CBD company. <span>Themed</span> to mimic their brand with <span>SVG images</span> extracted from their product logo and implemented as background elements via <span>CSS</span>. Mockup rendered in <span>Figma</span>. </>,
         liveSite: "https://abzijgen.com/",
         githubRepo: "https://github.com/gare-Ware/Abzijgen",
         url: "abzijgen",
