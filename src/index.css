@@ -489,6 +489,9 @@ button {
   .navbar__menu-items li {
     transition: 300ms;
   }
+  .navbar__menu-items li a {
+    transition: border-bottom 300ms;
+  }
 
   .navbar__menu-items li:hover, .navbar__menu-items li:focus {
     transform: scale(1.05);
@@ -504,9 +507,21 @@ button {
     transform: translateY(2px);
   }
 
-  .navbar__menu-items .active {
-    color: var(--green);
+  .navbar__menu-large-screen .navbar__contact:focus {
+    color: var(--black);
   }
+
+  .active-scroll-spy {
+    padding-bottom: .3em;
+    border-bottom: 3px solid var(--green);
+  }
+
+  .navbar__menu-large-screen .navbar__contact.active-scroll-spy {
+    background-color: var(--light-gray);
+    padding-bottom: .5em;
+    border-bottom: none;
+  }
+
 
   /* ---page container--- */
 
@@ -640,5 +655,6 @@ button {
     vertical-align: middle;
     margin-top: -.2em;
   }
+
 }
 

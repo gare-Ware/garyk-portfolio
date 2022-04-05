@@ -1,12 +1,11 @@
 
-import { useState } from "react"
+import { useState, createRef } from "react"
+import ScrollSpy from "react-ui-scrollspy";
 
 export default function Navbar() {
-    
     const [menuOpen, setMenuOpen] = useState(false)
     const toggleMenu = () => setMenuOpen(!menuOpen)
     const closeMenu = () => setMenuOpen(false)
-
     return (
         <>
             <header className="navbar">
@@ -14,12 +13,12 @@ export default function Navbar() {
                     <div className="navbar__burger-btn"></div>
                 </div>
                 <nav className="navbar__menu-large-screen">
-                    <ul className="navbar__menu-items" onClick={closeMenu}>
-                        <li><a href="#top">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#recent-projects">Recent projects</a></li>
+                    <ul className="navbar__menu-items">
+                        <li><a href="#top" data-to-scrollspy-id="home">Home</a></li>
+                        <li><a href="#about" data-to-scrollspy-id="about">About</a></li>
+                        <li><a href="#recent-projects" data-to-scrollspy-id="recent-projects">Recent projects</a></li>
                     </ul>
-                    <a href="#contact" className="navbar__contact navbar__contact-large-screen" onClick={closeMenu}>Contact</a>
+                    <a href="#contact" className="navbar__contact navbar__contact-large-screen" onClick={closeMenu} data-to-scrollspy-id="contact">Contact</a>
                 </nav>
                 <a href="#contact" className="navbar__contact" onClick={closeMenu}>Contact</a>
             </header>

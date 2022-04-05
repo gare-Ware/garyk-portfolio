@@ -7,4 +7,3 @@
 * HTML
 * CSS
 * React
-* React-Router
