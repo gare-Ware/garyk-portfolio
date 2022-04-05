@@ -3,7 +3,6 @@ import Home from './Components/Home'
 import About from './Components/About'
 import RecentProjects from './Components/RecentProjects'
 import Contact from './Components/Contact'
-import ScrollSpy from "react-ui-scrollspy";
 
 // import ProjectDetails from "./Pages/ProjectDetails";
 // import projects from "./Components/projects";
@@ -15,12 +14,10 @@ function App() {
     <div className="App">
       <Navbar />
       <main>
-        <ScrollSpy scrollThrottle={100}>
-          <Home />
-          <About />
-          <RecentProjects />
-          <Contact />
-        </ScrollSpy>
+        <Home />
+        <About />
+        <RecentProjects />
+        <Contact />
       </main>
     </div>
   );

@@ -13,11 +13,11 @@ export default function Navbar() {
                 </div>
                 <nav className="navbar__menu-large-screen">
                     <ul className="navbar__menu-items">
-                        <li><a href="#top" data-to-scrollspy-id="home">Home</a></li>
-                        <li><a href="#about" data-to-scrollspy-id="about">About</a></li>
-                        <li><a href="#recent-projects" data-to-scrollspy-id="recent-projects">Recent projects</a></li>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#recent-projects">Recent projects</a></li>
                     </ul>
-                    <a href="#contact" className="navbar__contact navbar__contact-large-screen" onClick={closeMenu} data-to-scrollspy-id="contact">Contact</a>
+                    <a href="#contact" className="navbar__contact navbar__contact-large-screen" onClick={closeMenu}>Contact</a>
                 </nav>
                 <a href="#contact" className="navbar__contact" onClick={closeMenu}>Contact</a>
             </header>

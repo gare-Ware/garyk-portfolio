@@ -511,7 +511,7 @@ button {
     color: var(--black);
   }
 
-  .active-scroll-spy {
+  /* .active-scroll-spy {
     padding-bottom: .3em;
     border-bottom: 3px solid var(--green);
   }
@@ -520,7 +520,7 @@ button {
     background-color: var(--light-gray);
     padding-bottom: .5em;
     border-bottom: none;
-  }
+  } */
 
 
   /* ---page container--- */
