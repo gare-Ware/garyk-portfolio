@@ -489,9 +489,6 @@ button {
   .navbar__menu-items li {
     transition: 300ms;
   }
-  .navbar__menu-items li a {
-    transition: border-bottom 300ms;
-  }
 
   .navbar__menu-items li:hover, .navbar__menu-items li:focus {
     transform: scale(1.05);

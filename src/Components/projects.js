@@ -24,7 +24,7 @@ const projects = [
     },
     {
         name: "Abzijgen",
-        summary: <><span>IN PROGRESS</span> A promotional website for a New Jersey startup CBD company. <span>Themed</span> to mimic their brand with <span>SVG images</span> extracted from their product logo and implemented as background elements via <span>CSS</span>. Mockup rendered in <span>Figma</span>. </>,
+        summary: <><span>IN PROGRESS</span> A promotional website for a New Jersey startup CBD company. <span>Themed</span> to mimic their brand with <span>SVG images</span> extracted from their product logo using <span>Adobe Illustrator</span> and implemented as background elements in <span>CSS</span>. Mockup rendered in <span>Figma</span>. </>,
         liveSite: "https://abzijgen.com/",
         githubRepo: "https://github.com/gare-Ware/Abzijgen",
         url: "abzijgen",
@@ -41,7 +41,7 @@ const projects = [
     },
     {
         name: "Speed Typing",
-        summary: <>A stylish and fun speed typing game built with <span>React</span> using <span>custom hooks</span>. User input for time limit.</>,
+        summary: <>A stylish and fun timed typing game built with <span>React</span> using <span>custom hooks</span>. User input for time limit.</>,
         liveSite: "https://gk-speedtyping.netlify.app/",
         githubRepo: "https://github.com/gare-Ware/speed-typing.git",
         url: "speed-typing",
@@ -49,7 +49,7 @@ const projects = [
     },
     {
         name: "Tenzies",
-        summary: <>A dice game built with <span>React</span>. High score maintained via <span>local storage</span>. Die images rendered with <span>CSS</span> and <span>flexbox</span>. <span>Npm</span> package <span>react-confetti</span> used for winning animation.</>,
+        summary: <>A dice game built with <span>React</span>. High score of rolls and time maintained via <span>local storage</span>. Die images rendered with <span>CSS</span> and <span>flexbox</span>. <span>Npm</span> package <span>react-confetti</span> used for winning animation.</>,
         liveSite: "https://gk-tenzies.netlify.app/",
         githubRepo: "https://github.com/gare-Ware/Tenzies.git",
         url: "tenzies",
