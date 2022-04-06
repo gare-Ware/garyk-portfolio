@@ -1,8 +1,8 @@
-# Frontend Developer || NJ/NYC
+# My Portfolio
 
-## Coming soon...
+## Unfinished build: [garyk.dev](https://garyk.dev)
 
-### Built with:
+### Built from scratch with:
 * Javascript
 * HTML
 * CSS
