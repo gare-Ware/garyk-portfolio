@@ -10,7 +10,9 @@ A user friendly and accessible portfolio website featuring a sleek, dark UI.
 
 **Tech used:** HTML, CSS, JavaScript, React
 
-I designed the site with accessibility in mind while also making it both stylish and minimal. All selections are labeled and there are minimal animations. Bold typography accomplishes lots of styling on its own. All sections - particularly the projects section - are reusable components which allow for easily adding more content. EmailJS is used to handle form submissions.
+I designed the site with accessibility in mind while also making it both stylish and minimal. All selections are labeled and there are minimal animations. Bold typography accomplishes lots of styling on its own. All sections - particularly the projects section - are reusable components which allow for easily adding more content. [EmailJS](https://www.emailjs.com/docs/examples/reactjs/) is used to handle form submissions.
+
+Project images were generated with an [image generator](https://github.com/gare-Ware/screenshot-img-generator.git) I built.
 
 ## Lessons Learned:
 
