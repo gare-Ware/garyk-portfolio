@@ -24,9 +24,9 @@ const projects = [
     },
     {
         name: "Abzijgen",
-        summary: <><span>IN PROGRESS</span> A promotional website for a New Jersey startup CBD company. <span>Themed</span> to mimic their brand with <span>SVG images</span> extracted from their product logo using <span>Adobe Illustrator</span> and implemented as background elements in <span>CSS</span>. Mockup rendered in <span>Figma</span>. </>,
-        liveSite: "https://abzijgen.com/",
-        githubRepo: "https://github.com/gare-Ware/Abzijgen",
+        summary: <><span>IN PROGRESS</span> A promotional website for a New Jersey startup CBD company. <span>Themed</span> to mimic their brand with <span>SVG images</span> extracted from their product logo using <span>Adobe Illustrator</span> and implemented as background elements in <span>CSS</span>. Mockup rendered in <span>Figma</span>. Coming soon page rendered at custom domain while full site is being developed. Utilized <span>SEO</span> practices for top Google search result.</>,
+        liveSite: "https://fervent-pare-dbd0bb.netlify.app/",
+        githubRepo: "https://github.com/gare-Ware/abzijgen-v2",
         url: "abzijgen",
         screens: abzijgen
     },
