@@ -11,7 +11,7 @@ export default function About() {
                 <p className="about__body">I spent many years on a quest to sharpen my soft skills. But as I’ve gotten older, I've naturally returned to my roots. I am driven to finally pursue my true passion and commit to the world of web development. I have established some ambitious goals for myself and my journey to achieve them has begun. Please reach out if you would like to take part!</p>
             </div>
 
-            <a href="https://drive.google.com/file/d/1c65zpkdLQyI1F4hmTV4tjnyEl_68Ma4b/view?usp=sharing" target="_blank" rel="noreferrer" className="about__link">View resume <FaRegFilePdf className="about__link-icon" /></a>
+            <a href="https://drive.google.com/file/d/1S8OgKeqv3X3nBio2slJwjmmYXFHgUbt0/view?usp=sharing" target="_blank" rel="noreferrer" className="about__link">View resume <FaRegFilePdf className="about__link-icon" /></a>
         </div>
     )
 }
