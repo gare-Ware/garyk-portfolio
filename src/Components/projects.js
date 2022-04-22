@@ -4,6 +4,7 @@ import abzijgen from "../imgs/abzijgen.png"
 import speedTyping from '../imgs/speed-typing.png'
 import tenzies from '../imgs/tenzies.png'
 import portfolio from '../imgs/portfolio.png'
+import userDash from '../imgs/user-dashboard.png'
 
 const projects = [
     {
@@ -24,11 +25,19 @@ const projects = [
     },
     {
         name: "Abzijgen",
-        summary: <><span>IN PROGRESS</span> A promotional website for a New Jersey startup CBD company. <span>Themed</span> to mimic their brand with <span>SVG images</span> extracted from their product logo using <span>Adobe Illustrator</span> and implemented as background elements in <span>CSS</span>. Mockup rendered in <span>Figma</span>. Coming soon page live at custom domain while full site is developed. Utilized <span>SEO</span> practices for top Google search result.</>,
+        summary: <><span>IN PROGRESS</span> A promotional website for a New Jersey startup CBD company. <span>SVG images</span> extracted from their product logo using <span>Adobe Illustrator</span> and implemented as background elements in <span>CSS</span>. Mockup rendered in <span>Figma</span>. Coming soon page live at custom domain while full site is developed. Utilized <span>SEO</span> practices for top Google search result.</>,
         liveSite: "https://fervent-pare-dbd0bb.netlify.app/",
         githubRepo: "https://github.com/gare-Ware/abzijgen-v2",
         url: "abzijgen",
         screens: abzijgen
+    },
+    {
+        name: "User Dashboard",
+        summary: <>Dashboard that displays user data <span>fetched</span> from the JSON Placeholder <span>API</span> using <span>async/await</span> functions and organizes it in a table. Selecting a user displays their post history. User and Post data stored in <span>ES6 classes</span>. Input field allows for filtering of posts by title.</>,
+        liveSite: "https://zesty-llama-219898.netlify.app/",
+        githubRepo: "https://github.com/gare-Ware/user-dashboard",
+        url: "user-dashboard",
+        screens: userDash
     },
     {
         name: "Snake",
