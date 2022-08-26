@@ -1,4 +1,4 @@
-import { FaRegFilePdf } from 'react-icons/fa'
+// import { FaRegFilePdf } from 'react-icons/fa'
 
 export default function About() {
     return (
