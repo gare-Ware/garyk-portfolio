@@ -15,7 +15,7 @@ export default function About() {
                 <p className="about__body">[removed]</p>
             </div>
 
-            <a href="#" target="_blank" rel="noreferrer" className="about__link">View resume <FaRegFilePdf className="about__link-icon" /></a>
+            {/* <a href="#" target="_blank" rel="noreferrer" className="about__link">View resume <FaRegFilePdf className="about__link-icon" /></a> */}
         </div>
     )
 }
