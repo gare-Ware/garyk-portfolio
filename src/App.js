@@ -1,8 +1,8 @@
-import Navbar from "./Components/Navbar";
-import Home from './Components/Home'
-import About from './Components/About'
-import RecentProjects from './Components/RecentProjects'
-import Contact from './Components/Contact'
+// import Navbar from "./Components/Navbar";
+// import Home from './Components/Home'
+// import About from './Components/About'
+// import RecentProjects from './Components/RecentProjects'
+// import Contact from './Components/Contact'
 
 // import ProjectDetails from "./Pages/ProjectDetails";
 // import projects from "./Components/projects";
@@ -11,13 +11,12 @@ import Contact from './Components/Contact'
 function App() {
 
   return (
-    <div className="App">
-      <Navbar />
+    <div className="App" style={{height: '100vh'}}>
+      {/* <Navbar /> */}
       <main>
-        <Home />
-        <About />
-        <RecentProjects />
-        <Contact />
+        <div>
+          <h1>Site is down for maintenance<span style={{fontSize: '1rem'}}>...and privacy 🙂</span></h1>
+        </div>
       </main>
     </div>
   );
